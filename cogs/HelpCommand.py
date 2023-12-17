@@ -11,8 +11,7 @@ class HelpCommand(commands.Cog):
 
     @commands.command()
     async def help(self, ctx):
-        helpEmbed = discord.Embed(title="Morganthe Bot <3", description="All commands for the bot.", color=discord.Color.random())
-        helpEmbed.set_author(name="Morganthe")
+        helpEmbed = discord.Embed(title="Here is a list of commands.", color=discord.Color.random())
         helpEmbed.add_field(name="!bodies", value="View all pet bodies; the pet body commands won't be listed here", inline=False)
         helpEmbed.add_field(name="!catalog", value="View Ferricord's pet catalog", inline=False)
         helpEmbed.add_field(name="!spellements", value="View spellements guide", inline=False)

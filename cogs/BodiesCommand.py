@@ -9,9 +9,9 @@ class BodiesCommand(commands.Cog):
     async def on_ready(self):
         print("BodiesCommand.py is online.")
         
+    @commands.command()
     async def bodies(self, ctx):
-        bodiesEmbed = discord.Embed(title="Bodies", description="All available pet bodies.", color=discord.Color.random())
-        bodiesEmbed.set_author(name="Morganthe")
+        bodiesEmbed = discord.Embed(title="All available pet bodies.", color=discord.Color.random())
         bodiesEmbed.add_field(name="!elect", value="Elect's Willcast Hex Utility Soulful Knights", inline=False)
         bodiesEmbed.add_field(name="!montoso", value="Montoso's Piercer Variant Beguiled Gargoyles", inline=False)
         bodiesEmbed.add_field(name="!montoso2", value="Montoso's Rounder Variant Dark Hounds", inline=False)
